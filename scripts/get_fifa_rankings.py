@@ -4,7 +4,7 @@ import sys
 
 def get_rankings():
     original_stdout = sys.stdout
-    with open('../data/rankings.csv', 'w') as f:
+    with open('../data/fifa-rankings-Oct-2022.csv', 'w') as f:
         sys.stdout = f
         for page in range(1, 6):
             url = "./rankings_table_" + str(page) + ".html"
